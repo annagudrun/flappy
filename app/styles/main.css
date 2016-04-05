@@ -75,4 +75,10 @@ body {
 	width: 180em;
 	background: url("/images/ground.png");
 	background-size: 30%;
+	-webkit-animation: movingGround 7s linear infinite;
+}
+
+@keyframes movingGround {
+	from {left: 0em;}
+	to {left: -50em}
 }
