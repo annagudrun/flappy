@@ -10,6 +10,11 @@ window.Player = (function() {
 	var HEIGHT = 5;
 	var INITIAL_POSITION_X = 30;
 	var INITIAL_POSITION_Y = 25;
+	var JUMPSPEED = 50;
+	var FALLING = 0;
+	var FALLDIV = 10;
+	var JUMPING = 0;
+	var JUMPINGDIV = 7;
 
 	var Player = function(el, game) {
 		this.el = el;
@@ -23,24 +28,23 @@ window.Player = (function() {
 	Player.prototype.reset = function() {
 		this.pos.x = INITIAL_POSITION_X;
 		this.pos.y = INITIAL_POSITION_Y;
+		FALLING = 0;
 	};
 
 	Player.prototype.onFrame = function(delta) {
-		if (Controls.keys.right) {
-			this.pos.x += delta * SPEED;
-		}
-		if (Controls.keys.left) {
-			this.pos.x -= delta * SPEED;
-		}
-		if (Controls.keys.down) {
-			this.pos.y += delta * SPEED;
+		if(JUMPING > 0) {
+			this.pos.y -= delta * JUMPSPEED * (JUMPING / JUMPINGDIV);
+			JUMPING--;
+		}else if (Controls.keys.up) {
+			JUMPING = 13;
 		}
 		if (Controls.keys.up) {
-			this.pos.y -= delta * SPEED;
+			FALLING = 0;
 		}
+		this.pos.y += delta * SPEED * (FALLING / FALLDIV);
+		FALLING++;
 
 		this.checkCollisionWithBounds();
-
 		// Update UI
 		this.el.css('transform', 'translate(' + this.pos.x + 'em, ' + this.pos.y + 'em)');
 	};
