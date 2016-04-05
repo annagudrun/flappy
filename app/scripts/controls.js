@@ -7,7 +7,6 @@ window.Controls = (function() {
      */
     var KEYS = {
         32: 'space',
-        38: 'up',
     };
 
     /**
