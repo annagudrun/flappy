@@ -14,7 +14,6 @@ window.Game = (function() {
 
 		// Cache a bound onFrame since we need it each frame.
 		this.onFrame = this.onFrame.bind(this);
-		this.ground = this.el.find('.Ground');
 	};
 
 	/**
@@ -65,7 +64,7 @@ window.Game = (function() {
 	Game.prototype.gameover = function() {
 		this.isPlaying = false;
 
-		this.ground.removeClass('.Ground');
+	//	var ground = this.el.find('.Ground');
 		// Should be refactored into a Scoreboard class.
 		var that = this;
 		var scoreboardEl = this.el.find('.Scoreboard');
