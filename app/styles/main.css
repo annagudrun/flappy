@@ -75,7 +75,7 @@ body {
 	width: 180em;
 	background: url("/images/ground.png");
 	background-size: 30%;
-	-webkit-animation: movingGround 7s linear infinite;
+	-webkit-animation: movingGround 2s linear infinite;
 }
 
 @keyframes movingGround {
