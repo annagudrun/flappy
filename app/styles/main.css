@@ -69,13 +69,33 @@ body {
 }
 
 .Ground {
-	position: absolute;;
+	position: absolute;
 	bottom: 0em;
 	height: 10em;
 	width: 180em;
 	background: url("/images/ground.png");
 	background-size: 30%;
 	-webkit-animation: movingGround 3s linear infinite;
+}
+
+.PipeBottom {
+	position: absolute;
+	bottom: 0em;
+	height: 20em;
+	width: 7em;
+	left: 60em;
+	background: url("/images/tubeToUse.png");
+	background-size: 100%;
+}
+
+.PipeTop {
+	position: absolute;
+
+	height: 20em;
+	width: 7em;
+	left: 60em;
+	background: url("/images/tubeToUse2.png");
+	background-size: 100%;
 }
 
 @keyframes movingGround {
