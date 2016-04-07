@@ -60,6 +60,7 @@ window.Game = (function() {
 	 */
 	Game.prototype.reset = function() {
 		this.player.reset();
+
 	};
 
 	/**
