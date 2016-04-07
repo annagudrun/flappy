@@ -52,6 +52,7 @@ window.Game = (function() {
 		$('.Ground').css('-webkit-animation-play-state', 'running');
 		$('.Candy').css('-webkit-animation-play-state', 'running');
 		$('.IceCream').css('-webkit-animation-play-state', 'running');
+		$('.Wings').css('-webkit-animation-play-state', 'running');
 	};
 
 	/**
@@ -81,6 +82,7 @@ window.Game = (function() {
 		$('.Ground').css('-webkit-animation-play-state', 'paused');
 		$('.Candy').css('-webkit-animation-play-state', 'paused');
 		$('.IceCream').css('-webkit-animation-play-state', 'paused');
+		$('.Wings').css('-webkit-animation-play-state', 'paused');
 	};
 
 	/**
