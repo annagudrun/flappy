@@ -69,7 +69,7 @@ body {
 }
 
 .Ground {
-	position: absolute;;
+	position: absolute;
 	bottom: 0em;
 	height: 10em;
 	width: 180em;
@@ -78,7 +78,63 @@ body {
 	-webkit-animation: movingGround 3s linear infinite;
 }
 
+.PipeBottom {
+	position: absolute;
+	bottom: 0em;
+	height: 20em;
+	width: 7em;
+	left: 60em;
+	background: url("/images/tubeToUse.png");
+	background-size: 100%;
+}
+
+.PipeTop {
+	position: absolute;
+
+	height: 20em;
+	width: 7em;
+	left: 60em;
+	background: url("/images/tubeToUse2.png");
+	background-size: 100%;
+}
+
 @keyframes movingGround {
 	from {left: 0em;}
 	to {left: -50em}
+}
+
+.Candy {
+	position: absolute;
+	background-image: url("/images/lollypop.png");
+	top: 0;
+	right:0;
+	width: 5em;
+	height: 15em;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	-webkit-animation: movingCandy 10s linear infinite;
+}
+
+@keyframes movingCandy {
+	from { transform: translateX(10em) rotateZ(0deg); }
+  	to { transform: translateX(-100em) rotateZ(1080deg); }
+}
+
+.IceCream {
+	position: absolute;
+	background-image: url("/images/iceCream.png");
+	top: 0;
+	right:0;
+	width: 5em;
+	height: 10em;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	-webkit-animation: movingIcecream 20s linear infinite;
+}
+
+@keyframes movingIcecream {
+	from { transform: translateX(0em) rotateZ(0deg); }
+  	to { transform: translateX(-100em) rotateZ(360deg); }
 }

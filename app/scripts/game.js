@@ -49,6 +49,10 @@ window.Game = (function() {
 		window.requestAnimationFrame(this.onFrame);
 		this.isPlaying = true;
 
+		$('.Ground').css('-webkit-animation-play-state', 'running');
+		$('.Candy').css('-webkit-animation-play-state', 'running');
+		$('.IceCream').css('-webkit-animation-play-state', 'running');
+
 	};
 
 	/**
@@ -65,6 +69,7 @@ window.Game = (function() {
 	Game.prototype.gameover = function() {
 		this.isPlaying = false;
 
+	//	var ground = this.el.find('.Ground');
 		// Should be refactored into a Scoreboard class.
 		var that = this;
 		var scoreboardEl = this.el.find('.Scoreboard');
@@ -75,6 +80,9 @@ window.Game = (function() {
 					scoreboardEl.removeClass('is-visible');
 					that.start();
 				});
+		$('.Ground').css('-webkit-animation-play-state', 'paused');
+		$('.Candy').css('-webkit-animation-play-state', 'paused');
+		$('.IceCream').css('-webkit-animation-play-state', 'paused');
 	};
 
 	/**
