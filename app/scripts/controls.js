@@ -13,6 +13,8 @@ window.Controls = (function() {
         0: 'mouseClick'
     };
 
+    var soundMuted = false;
+
     /**
      * A singleton class which abstracts all player input,
      * should hide complexity of dealing with keyboard, mouse
@@ -70,6 +72,22 @@ window.Controls = (function() {
         this._didJump = false;
         return answer;
     };
+
+    Controls.prototype.getSoundMuted = function() {
+        return soundMuted;
+    };
+
+    $('.muteButton').on('touchstart click',function(){
+        if(soundMuted){
+            soundMuted = false;
+            $('#audio').trigger('play');
+        }
+        else{
+            soundMuted = true;
+            $('#audio').trigger('pause');
+        }
+    });
+
 
     // Export singleton.
     return new Controls();

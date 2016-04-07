@@ -138,3 +138,10 @@ body {
 	from { transform: translateX(0em) rotateZ(0deg); }
   	to { transform: translateX(-100em) rotateZ(360deg); }
 }
+
+.muteButton {
+
+	float: left;
+	width: 6em;
+	height: 6em;
+}
