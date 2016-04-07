@@ -48,6 +48,10 @@ window.Game = (function() {
 		this.lastFrame = +new Date() / 1000;
 		window.requestAnimationFrame(this.onFrame);
 		this.isPlaying = true;
+
+		$('.Ground').css('-webkit-animation-play-state', 'running');
+		$('.Candy').css('-webkit-animation-play-state', 'running');
+		$('.IceCream').css('-webkit-animation-play-state', 'running');
 	};
 
 	/**
@@ -55,7 +59,6 @@ window.Game = (function() {
 	 */
 	Game.prototype.reset = function() {
 		this.player.reset();
-		this.ground.addClass('.Ground');
 	};
 
 	/**
@@ -75,6 +78,9 @@ window.Game = (function() {
 					scoreboardEl.removeClass('is-visible');
 					that.start();
 				});
+		$('.Ground').css('-webkit-animation-play-state', 'paused');
+		$('.Candy').css('-webkit-animation-play-state', 'paused');
+		$('.IceCream').css('-webkit-animation-play-state', 'paused');
 	};
 
 	/**
