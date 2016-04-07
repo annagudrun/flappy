@@ -1,3 +1,32 @@
+.PipeCombo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5em;
+    height: 57.6em;
+    transform: translateZ(0);
+}
+
+.topPipe1{
+		position: absolute;
+		top: 0;
+    width: 5em;
+    height: 57.6em;
+    background: url(/images/tubeToUse.png);
+    background-size: 100%;
+		transform: translateZ(0);
+}
+
+.bottomPipe1 {
+    position: absolute;
+    bottom: 0;
+    width: 5em;
+    height: 57.6em;
+    background: url(/images/tubeToUse.png);
+    background-size: 100%;
+  	transform: translateZ(0);
+}
+
 .Player {
 	position: absolute;
 	top: 0;
@@ -78,25 +107,6 @@ body {
 	-webkit-animation: movingGround 3s linear infinite;
 }
 
-.PipeBottom {
-	position: absolute;
-	bottom: 0em;
-	height: 20em;
-	width: 7em;
-	left: 60em;
-	background: url("/images/tubeToUse.png");
-	background-size: 100%;
-}
-
-.PipeTop {
-	position: absolute;
-
-	height: 20em;
-	width: 7em;
-	left: 60em;
-	background: url("/images/tubeToUse2.png");
-	background-size: 100%;
-}
 
 @keyframes movingGround {
 	from {left: 0em;}
