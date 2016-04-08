@@ -49,6 +49,7 @@ window.Controls = (function() {
             this.mouse[buttonName] = true;
             return false;
         }
+
     };
 
     Controls.prototype._onKeyUp = function(e) {
@@ -70,14 +71,17 @@ window.Controls = (function() {
     Controls.prototype.didJump = function() {
         var answer = this._didJump;
         this._didJump = false;
+
         return answer;
     };
 
     Controls.prototype.getSoundMuted = function() {
+        
         return soundMuted;
     };
 
     $('.muteButton').on('touchstart click',function(){
+        
         if(soundMuted){
             soundMuted = false;
             $('#audio').trigger('play');

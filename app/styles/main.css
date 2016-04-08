@@ -8,13 +8,13 @@
 }
 
 .topPipe1 {
-		position: absolute;
-		top: 0;
+	position: absolute;
+	top: 0;
     width: 7em;
     height: 10;
     background: url("/images/tubeToUse2.png");
     background-size: 100%;
-		transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 .bottomPipe1 {
@@ -37,20 +37,20 @@
 }
 
 .topPipe2 {
-		position: absolute;
-		top: 0;
+	position: absolute;
+	top: 0;
     width: 7em;
     height: 10em;
     background: url("/images/tubeToUse2.png");
     background-size: 100%;
-		transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 .bottomPipe2 {
     position: absolute;
     bottom: 0;
     width: 7em;
-		height: 30em;
+	height: 30em;
     background: url("/images/tubeToUse.png");
     background-size: 100%;
   	transform: translateZ(0);
@@ -66,13 +66,13 @@
 }
 
 .topPipe3 {
-		position: absolute;
-		top: 0;
+	position: absolute;
+	top: 0;
     width: 5em;
     height: 15em;
     background: url("/images/tubeToUse2.png");
     background-size: 100%;
-		transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 .bottomPipe3 {
@@ -141,7 +141,7 @@
 	color: purple;
 	position: absolute;
 	top: 5em;
-	left: 5em;
+	left: 6em;
 }
 
 .Scoreboard.is-visible {
