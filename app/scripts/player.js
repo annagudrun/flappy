@@ -32,12 +32,21 @@ window.Player = (function() {
 
 		if(Controls.keys.space ||  Controls.mouse.mouseClick) {
 			SPEED = 30;
+			
+			if(!Controls.getSoundMuted()) {
+
+				var jumpingSound = document.getElementById('jump');
+       			jumpingSound.play(); 
+
+			}
 		}
+
 		this.pos.y -= delta * SPEED;
 		SPEED -= GRAVITY * delta;
 
 
 		this.checkCollisionWithBounds();
+
 		// Update UI
 		//með því að bæta við translateZ þá er þetta element með sér layer á skjákortinu
 		this.el.css('transform', 'translateZ(0) translate(' + this.pos.x + 'em, ' + this.pos.y + 'em)');
