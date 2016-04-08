@@ -202,27 +202,7 @@ body {
 	from {left: 0em;}
 	to {left: -50em}
 }
-/*
-.PipeBottom {
-	position: absolute;
-	bottom: 0em;
-	height: 20em;
-	width: 7em;
-	left: 60em;
-	background: url("/images/tubeToUse.png");
-	background-size: 100%;
-}
 
-.PipeTop {
-	position: absolute;
-
-	height: 20em;
-	width: 7em;
-	left: 60em;
-	background: url("/images/tubeToUse2.png");
-	background-size: 100%;
-}
-*/
 .Candy {
 	position: absolute;
 	background-image: url("/images/lollypop.png");
