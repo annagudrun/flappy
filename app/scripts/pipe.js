@@ -57,15 +57,17 @@ window.Pipe = (function() {
 
     Pipe.prototype.checkCollision = function() {
       console.log('checkþcolision ');
-      if(nextID === this.id) {
-					++this.game.score;
-					$('#score').text(this.game.score);
-					nextID++;
-					if(nextID === 4) {
-						nextID = 1;
-					}
-				}
-
+      
+        if(nextID === this.id) {
+		  
+            ++this.game.score;
+            $('#score').text(this.game.score);
+            nextID++;
+    		
+            if(nextID === 4) {
+        		nextID = 1;
+        	}
+       }
     };
 
     return Pipe;
