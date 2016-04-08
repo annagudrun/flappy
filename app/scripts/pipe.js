@@ -33,12 +33,9 @@ window.Pipe = (function() {
 
         this.position -= delta * 10;
         //hérna ath ég hvort við seum komin út af skjánum
-    /*    if(this.postion < 0) {
-            console.log('inní loope');
-            this.randGap();
-            this.postion = this.game.WORLD_WIDTH;
-        }*/
-        this.checkCollision();
+        if(this.position < -10) {
+            this.positon = this.game.WORLD_WIDTH;
+        }
         this.el.css('transform', 'translateZ(0) translate3d(' + this.position + 'em, 0em, 0) ');
     };
 
@@ -56,15 +53,6 @@ window.Pipe = (function() {
     };
 
     Pipe.prototype.checkCollision = function() {
-      console.log('checkþcolision ');
-      if(nextID === this.id) {
-					++this.game.score;
-					$('#score').text(this.game.score);
-					nextID++;
-					if(nextID === 4) {
-						nextID = 1;
-					}
-				}
 
     };
 

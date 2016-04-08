@@ -80,7 +80,7 @@ window.Game = (function() {
 	Game.prototype.gameover = function() {
 		this.isPlaying = false;
 
-		
+
 		//if(!Controls.getSoundMuted()){
 			/*var over = document.getElementById('gameover');
 			over.play();*/

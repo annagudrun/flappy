@@ -12,7 +12,7 @@
 		top: 0;
     width: 7em;
     height: 10;
-    background: url("/images/tubeToUse.png");
+    background: url("/images/tubeToUse2.png");
     background-size: 100%;
 		transform: translateZ(0);
 }
@@ -41,7 +41,7 @@
 		top: 0;
     width: 7em;
     height: 10em;
-    background: url("/images/tubeToUse.png");
+    background: url("/images/tubeToUse2.png");
     background-size: 100%;
 		transform: translateZ(0);
 }
@@ -70,7 +70,7 @@
 		top: 0;
     width: 5em;
     height: 15em;
-    background: url("/images/tubeToUse.png");
+    background: url("/images/tubeToUse2.png");
     background-size: 100%;
 		transform: translateZ(0);
 }
@@ -80,7 +80,7 @@
     bottom: 0;
     width: 5em;
     height: 30em;
-    background: url("/images/tubeToUse2.png");
+    background: url("/images/tubeToUse.png");
     background-size: 100%;
   	transform: translateZ(0);
 }
@@ -245,5 +245,3 @@ body {
 	width: 6em;
 	height: 6em;
 }
-
-
