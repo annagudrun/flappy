@@ -145,3 +145,10 @@ body {
 	width: 6em;
 	height: 6em;
 }
+
+.Scoreboard-Score .Scoreboard-Highscore {
+
+	font-size: 30px;
+	font-style: Georgia;
+
+}
