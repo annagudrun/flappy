@@ -20,7 +20,7 @@ window.Game = (function() {
 		// Cache a bound onFrame since we need it each frame.
 		this.onFrame = this.onFrame.bind(this);
 
-		this.highScore = 0;
+		//this.highScore = 0;
 	};
 
 	/**
@@ -82,8 +82,8 @@ window.Game = (function() {
 
 		
 		//if(!Controls.getSoundMuted()){
-			var over = document.getElementById('gameover');
-			over.play();
+			/*var over = document.getElementById('gameover');
+			over.play();*/
 		//}
 
 	//	var ground = this.el.find('.Ground');
@@ -98,11 +98,11 @@ window.Game = (function() {
 					that.start();
 				});
 
-		$('.Scoreboard-Score>span').html(this.player.score);
+		/*$('.Scoreboard-Score>span').html(this.player.score);
 		if(this.player.score > this.highScore) {
 			this.highScore = this.player.score;
 		}
-		$('.Scoreboard-Highscore>span').html(this.highScore);
+		$('.Scoreboard-Highscore>span').html(this.highScore);*/
 
 		$('.Ground').css('-webkit-animation-play-state', 'paused');
 		$('.Candy').css('-webkit-animation-play-state', 'paused');
