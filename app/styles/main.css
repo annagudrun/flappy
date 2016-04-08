@@ -2,17 +2,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 5em;
+    width: 7em;
     height: 57.6em;
     transform: translateZ(0);
 }
 
-.topPipe1{
+.topPipe1 {
 		position: absolute;
 		top: 0;
-    width: 5em;
-    height: 57.6em;
-    background: url(/images/tubeToUse.png);
+    width: 7em;
+    height: 10;
+    background: url("/images/tubeToUse.png");
     background-size: 100%;
 		transform: translateZ(0);
 }
@@ -20,9 +20,67 @@
 .bottomPipe1 {
     position: absolute;
     bottom: 0;
+    width: 7em;
+    height: 30em;
+    background: url("/images/tubeToUse.png");
+    background-size: 100%;
+  	transform: translateZ(0);
+}
+
+.PipeCombo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7em;
+    height: 57.6em;
+    transform: translateZ(0);
+}
+
+.topPipe2 {
+		position: absolute;
+		top: 0;
+    width: 7em;
+    height: 10em;
+    background: url("/images/tubeToUse.png");
+    background-size: 100%;
+		transform: translateZ(0);
+}
+
+.bottomPipe2 {
+    position: absolute;
+    bottom: 0;
+    width: 7em;
+		height: 30em;
+    background: url("/images/tubeToUse.png");
+    background-size: 100%;
+  	transform: translateZ(0);
+}
+
+.PipeCombo3 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 5em;
     height: 57.6em;
-    background: url(/images/tubeToUse.png);
+    transform: translateZ(0);
+}
+
+.topPipe3 {
+		position: absolute;
+		top: 0;
+    width: 5em;
+    height: 15em;
+    background: url("/images/tubeToUse.png");
+    background-size: 100%;
+		transform: translateZ(0);
+}
+
+.bottomPipe3 {
+    position: absolute;
+    bottom: 0;
+    width: 5em;
+    height: 30em;
+    background: url("/images/tubeToUse2.png");
     background-size: 100%;
   	transform: translateZ(0);
 }
@@ -36,6 +94,24 @@
 	background: url("/images/pig.png");
 	background-size: 100%;
 }
+
+.Wings {
+ 	position: absolute;
+ 	left: 0.4em;
+ 	top: 1.2em;
+ 	height: 2em;
+ 	width: 3em;
+ 	background-image: url("/images/wings.png");
+	background-size: 120%;
+	background-repeat: no-repeat;
+ 	transform-origin: top left;
+ 	animation:0.4s flap alternate infinite;
+}
+
+@keyframes flap {
+ 	from { transform: rotateX(0); }
+ 	to { transform: rotateX(180deg); }
+ }
 
 .Scoreboard {
 	position: absolute;
@@ -111,4 +187,47 @@ body {
 @keyframes movingGround {
 	from {left: 0em;}
 	to {left: -50em}
+}
+
+.Candy {
+	position: absolute;
+	background-image: url("/images/lollypop.png");
+	top: 0;
+	right:0;
+	width: 5em;
+	height: 15em;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	-webkit-animation: movingCandy 10s linear infinite;
+}
+
+@keyframes movingCandy {
+	from { transform: translateX(10em) rotateZ(0deg); }
+  	to { transform: translateX(-100em) rotateZ(1080deg); }
+}
+
+.IceCream {
+	position: absolute;
+	background-image: url("/images/iceCream.png");
+	top: 0;
+	right:0;
+	width: 5em;
+	height: 10em;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	-webkit-animation: movingIcecream 20s linear infinite;
+}
+
+@keyframes movingIcecream {
+	from { transform: translateX(0em) rotateZ(0deg); }
+  	to { transform: translateX(-100em) rotateZ(360deg); }
+}
+
+.muteButton {
+
+	float: left;
+	width: 6em;
+	height: 6em;
 }
